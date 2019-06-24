@@ -12,6 +12,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 #Se incluye el módulo QZXing, descargarlo previamente en la carpeta 3rdparty
+#Si la descarga del módulo se encuentra en otro directorio hay que modificar
+#la ruta del archivo QZXing.pri
 include($$PWD/3rdparty/QZXing/src/QZXing.pri)
 
 android {
