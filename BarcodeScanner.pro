@@ -11,6 +11,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+#Se incluye el módulo QZXing, descargarlo previamente en la carpeta 3rdparty
 include($$PWD/3rdparty/QZXing/src/QZXing.pri)
 
 android {

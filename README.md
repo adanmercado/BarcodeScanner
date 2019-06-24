@@ -1,8 +1,12 @@
 # BarcodeScanner
-Simple escáner de códigos de barra y códigos qr. Escrito en Qt QML
+Escáner de códigos de barra y códigos qr. Escrito en Qt QML
 
 ## Dependencias
 QZXing
+```
+cd BarcodeScanner/3rdparty
+git clone https://github.com/ftylitak/qzxing.git QZXing
+```
 
 ## Autor
 
